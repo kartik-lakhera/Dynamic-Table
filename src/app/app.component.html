@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+
+<input [(ngModel)]="dataBind" />
+
+<app-child1 *ngIf="dataBind === 'child1'" [dataSource]="dataSource" [displayedColumns]="displayedColumns"></app-child1>
+<app-child2 *ngIf="dataBind === 'child2'"  [dataSource]="dataSource" [displayedColumns]="displayedColumns"></app-child2>
